@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono|Roboto+Slab&display=swap');
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.textarea {
+  font-family: 'Roboto Mono', serif !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+code, .terminal {
+  font-family: 'Roboto Mono', serif !important;
+}
+input {
+  border-radius: 8px !important;
+}
+footer {
+  font-family: 'Roboto Slab', serif !important;
+}
+.solution, .level {
+  padding: 20px;
+  border-radius: 10px;
+}
+.examples, .text, .terminal {
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+.m {
+  margin-bottom: 15px;
+}
