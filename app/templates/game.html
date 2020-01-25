@@ -48,8 +48,10 @@
           </div>
           <div class="col-6">
             <div class="solution bg-secondary">
-              <label for="Textarea" class="text-light">Ответ:</label>
-              <textarea class="form-control" id="Textarea" rows="11"></textarea>
+              <form action="" method="post">
+              {{form.code()}}
+                  <input type="submit">
+            </form>
             </div>
           </div>
         </div>
