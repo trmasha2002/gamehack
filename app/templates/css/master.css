@@ -2,9 +2,11 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
-code, textarea {
+code, textarea, .terminal {
   font-family: 'Roboto Mono', serif !important;
-  color: #565656 !important;
+}
+input {
+  border-radius: 8px !important;
 }
 footer {
   font-family: 'Roboto Slab', serif !important;
@@ -13,7 +15,7 @@ footer {
   padding: 20px;
   border-radius: 10px;
 }
-.examples, .text, textarea {
+.examples, .text, .terminal, textarea {
   padding: 10px !important;
   border-radius: 10px !important;
 }
