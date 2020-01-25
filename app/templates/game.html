@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>CodeCleaner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
@@ -32,7 +33,7 @@
     <main>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="level bg-secondary">
               <div class="instructions">
                 <div class="text text-light">
@@ -46,12 +47,13 @@
               </div>
             </div>
             <br>
-              <form class="" action="index.html" method="post">
-                <input class="btn btn-secondary" type="button" value="Предыдущий уровень">
-                <input class="btn btn-success" type="button" value="Следующий уровень">
+              <form action="index.html" method="post">
+                <input class="btn btn-secondary m" type="button" value="Предыдущий уровень">
+                <input class="btn btn-success m" type="button" value="Следующий уровень">
               </form>
+              <br>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="solution bg-secondary">
               <form action="index.html" method="post">
                 <label for="Textarea" class="text-light">Ответ:</label>
