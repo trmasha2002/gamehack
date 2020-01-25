@@ -1,1 +1,1 @@
-a,b=map(int)
+a,b=

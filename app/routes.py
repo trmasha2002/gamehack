@@ -16,12 +16,11 @@ def index():
         f.close()
         command = "pycodestyle --statistics file.py"
         pipe = os.popen(command)
-        mas = pipe.readlines()
-        result = dict()
-        for i in range(len(mas)):
-            result["Error"+str(i)] = mas[i]
+        result = pipe.readlines()
+        result_main = dict()
+        result_main["arr"] = result
         o = open("output.json", "w")
-        result = json.dumps(result)
+        result = json.dumps(result_main)
         o.write(result)
         #result = subprocess.check_output(["pycodestyle", '--statistics', 'file.py'])
         #result = os.system("pycodestyle --statistics file.py")
