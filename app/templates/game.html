@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>CodeCleaner</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/bootstrap.min.css', v=1)}}">
-     <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/master.css', v=1)}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/master.css', v=1)}}">
   </head>
   <body>
     <header>
@@ -57,7 +57,7 @@
             <div class="solution bg-secondary">
               <form action="" method="post" class="textarea">
               {{form.code()}}
-              <input class="btn btn-dark" type="submit" value="Проверить">
+              <input class="btn btn-dark" id="apply" type="submit" value="Проверить">
             </form>
 
               <br>
@@ -81,9 +81,9 @@
         <p>Основано на реальных событиях...</p>
       </div>
     </div>
-    <script src="js/jQuery-3.4.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="static/js/jQuery-3.4.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/script.js"></script>
   </body>
 </html>
