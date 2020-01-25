@@ -2,19 +2,29 @@ from flask import render_template, request
 from app import app
 from app.forms import CodeForm
 from flask import render_template, flash, redirect
+import sys
 import os
+import json
+import subprocess
+from contextlib import redirect_stdout
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     form = CodeForm()
     if request.method == "POST":
-        print(request.form)
         f = open("file.py", "w")
-        f.write(form.code.data)
+        print(form.code.data,file=f)
         f.close()
-        result = []
-        result.append(os.system("pycodestyle --statistics file.py"))
-        print(result)
-        return redirect('/index')
+        command = "pycodestyle --statistics file.py"
+        pipe = os.popen(command)
+        mas = [pipe.readlines()]
+        o = open("output.json", "w")
+        result = json.dumps(mas)
+        o.write(result)
+        #result = subprocess.check_output(["pycodestyle", '--statistics', 'file.py'])
+        #result = os.system("pycodestyle --statistics file.py")
+        #print(result)
+        #result = json.dumps(result)
+        return result
 
     return render_template('game.html', form=form)
 
