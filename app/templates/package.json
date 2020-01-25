@@ -1,0 +1,20 @@
+{
+  "name": "codecleaner",
+  "version": "1.0.0",
+  "description": "gamehack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trmasha2002/gamehack.git"
+  },
+  "author": "Reporter, TrMasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trmasha2002/gamehack/issues"
+  },
+  "homepage": "https://github.com/trmasha2002/gamehack#readme",
+  "dependencies": {}
+}
