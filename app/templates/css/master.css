@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Muli|Roboto+Mono|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono|Roboto+Slab&display=swap');
 body {
-  font-family: 'Muli', sans-serif !important;
+  font-family: 'Nunito', sans-serif;
 }
-code {
+code, textarea, .terminal {
   font-family: 'Roboto Mono', serif !important;
-  color: #565656 !important;
+}
+input {
+  border-radius: 8px !important;
 }
 footer {
   font-family: 'Roboto Slab', serif !important;
-}
-.level {
 }
 .solution, .level {
   padding: 20px;
   border-radius: 10px;
 }
-.examples, .text {
-  padding: 10px;
-  border-radius: 10px;
+.examples, .text, .terminal, textarea {
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+.m {
+  margin-bottom: 15px;
 }
