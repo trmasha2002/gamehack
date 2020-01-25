@@ -2,7 +2,7 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
-.textarea {
+.textarea textarea {
   font-family: 'Roboto Mono', serif !important;
   padding: 10px !important;
   border-radius: 10px !important;
@@ -26,4 +26,30 @@ footer {
 }
 .m {
   margin-bottom: 15px;
+}
+#preloader_malc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 99
+}
+
+#preloader_malc div {
+  background: #565656;
+  width: 100%;
+  height: auto;
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto
 }
