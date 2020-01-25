@@ -2,7 +2,12 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
-code, textarea, .terminal {
+.textarea textarea {
+  font-family: 'Roboto Mono', serif !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+code, .terminal {
   font-family: 'Roboto Mono', serif !important;
 }
 input {
@@ -15,7 +20,7 @@ footer {
   padding: 20px;
   border-radius: 10px;
 }
-.examples, .text, .terminal, textarea {
+.examples, .text, .terminal {
   padding: 10px !important;
   border-radius: 10px !important;
 }
