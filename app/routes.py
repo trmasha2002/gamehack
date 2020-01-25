@@ -10,8 +10,9 @@ def index():
         print(request.form)
         f = open("file.py", "w")
         f.write(form.code.data)
+        f.close()
         result = []
-        result.append(os.system("pycodestyle --statistics runner.py"))
+        result.append(os.system("pycodestyle --statistics file.py"))
         print(result)
         return redirect('/index')
 

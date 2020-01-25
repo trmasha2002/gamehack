@@ -1,2 +1,2 @@
 import os
-print(os.system("pycodestyle --statistics runner.py"))
+print(os.system("pycodestyle --statistics file.py"))
