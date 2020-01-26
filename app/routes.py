@@ -24,7 +24,7 @@ def index():
         #result = os.system("pycodestyle --statistics file.py")
         #print(result)
         #result = json.dumps(result)
-        return result
+        return redirect("/index")
 
     return render_template('game.html', form=form)
 
