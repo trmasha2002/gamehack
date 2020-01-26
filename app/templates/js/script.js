@@ -4,6 +4,7 @@ $("#apply").on("click", (e) => {
 
   $.getJSON('http://127.0.0.1:5000/index.html/output.json', (data) => {
 
+
     var str = ""
 
     if (Object.keys(data["0"]).length == 0) {

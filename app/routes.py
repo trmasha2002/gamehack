@@ -17,14 +17,17 @@ def index():
         command = "pycodestyle --statistics file.py"
         pipe = os.popen(command)
         mas = [pipe.readlines()]
+        result = dict()
+        for i in range(len(mas)):
+            result["Error"+str(i)] = mas[i]
         o = open("output.json", "w")
-        result = json.dumps(mas)
+        result = json.dumps(result)
         o.write(result)
         #result = subprocess.check_output(["pycodestyle", '--statistics', 'file.py'])
         #result = os.system("pycodestyle --statistics file.py")
         #print(result)
         #result = json.dumps(result)
-        return redirect("/index")
+        return redirect('/index')
 
     return render_template('game.html', form=form)
 
