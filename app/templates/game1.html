@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CodeCleaner</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/bootstrap.min.css', v=1)}}">
+     <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/master.css', v=1)}}">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CodeCleaner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="game.html">Игра</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Аккаунт</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="level bg-secondary">
+              <div class="instructions">
+                <div class="text text-light">
+                    <h1>Первый уровень.</h1>
+                  <p>Всегда окружайте эти бинарные операторы одним пробелом с каждой стороны: присваивания (=, +=, -= и другие), сравнения (==, <, >, !=, <>, <=, >=, in, not in, is, is not), логические (and, or, not). Отредактируйте следующий код</p>
+                </div>
+                <div class="examples bg-dark">
+                  <code class="text-light">
+                      a=1<br>
+                      b=2<br>
+                      a+=2<br>
+                      b-=3<br>
+                      a+=b<br>
+                      print(a)
+                  </code>
+                </div>
+              </div>
+            </div>
+            <br>
+              <form action="index.html" method="post">
+                <input class="btn btn-secondary m" type="button" value="Предыдущий уровень">
+                <input class="btn btn-success m" id="next" type="button" value="Следующий уровень" style="display: none">
+              </form>
+              <br>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="solution bg-secondary">
+              <form action="" method="post" class="textarea" id="checkform">
+              {{form.code()}}
+                <br>
+              <input class="btn btn-dark" id="apply" type="submit" value="Проверить">
+            </form>
+
+              <br>
+              <p class="text-light">Терминал:</p>
+              <div class="terminal bg-dark">
+                <br>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br>
+    <footer>
+      <p class="text-center">by Enigma for gamehack hackaton</p>
+    </footer>
+    <div id="preloader_malc">
+      <div>
+        <p>Основано на реальных событиях...</p>
+      </div>
+    </div>
+    <script src="static/js/jQuery-3.4.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
