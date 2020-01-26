@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>CodeCleaner</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/bootstrap.min.css', v=1)}}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/master.css', v=1)}}">
+     <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/master.css', v=1)}}">
   </head>
   <body>
     <header>
@@ -49,7 +49,7 @@
             <br>
               <form action="index.html" method="post">
                 <input class="btn btn-secondary m" type="button" value="Предыдущий уровень">
-                <input class="btn btn-success m" type="button" value="Следующий уровень">
+                <input class="btn btn-success m" id="next" type="button" value="Следующий уровень" style="display: none">
               </form>
               <br>
           </div>
@@ -63,8 +63,7 @@
               <br>
               <p class="text-light">Терминал:</p>
               <div class="terminal bg-dark">
-                <p class="text-danger">kljjsd</p>
-                <p class="text-success">kljjsd</p>
+                <br>
               </div>
               <br>
             </div>
